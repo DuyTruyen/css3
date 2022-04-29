@@ -13,63 +13,133 @@
         padding: 0;
         box-sizing: border-box;
     }
+    #container{
+        width: fit-content;
+        margin: 100px auto;
+
+    }
+
     .xoso{
-        display: grid;
-        display: inline-grid;
+        
+        display: flex;
+        border: 1px solid black;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .item-group-1{
+        margin: 3px;
+
     }
    .item{
-        border: 2px solid black;
-        box-shadow: 1px black;
+    -webkit-text-stroke: 1px white;
+        border: 2px solid rgb(151, 128, 128);
+        box-shadow: 2px 2px rgb(189, 173, 173);
         border-radius: 50%;
         width: 100px;
         height: 100px;
         text-align: center;
         line-height: 100px;
+        transition: transform 0.3s;
+        color: black;
+        
+
     }
+    
+
+    
+
+button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:focus {
+  background-color: #F082AC;
+}
+
+.bt {
+width: max-content;
+margin: 100px auto;
+text-align: center;
+}
+
 </style>
   </head>
   <body>
+      <div id="container">
     <div class="xoso">
 
 
-        <div class="item-group">
-            <div class="item1 item">Number</div>
-            <div class="item2 item">Number</div>
-            <div class="item3 item">Number</div>
-            <div class="item4 item">Number</div>
-            <div class="item5 item">Number</div>
-            <div class="item6 item">Number</div>
-            <div class="item7 item">Number</div>
-            <div class="item8 item">Number</div>
-            <div class="item9 item">Number</div>
-            <div class="item10 item">Number</div>
+        <div class="item-group-1">
+            <div class="item0 item cot1">0</div>
+            <div class="item1 item cot1">1</div>
+            <div class="item2 item cot1">2</div>
+            <div class="item3 item cot1">3</div>
+            <div class="item4 item cot1">4</div>
+            <div class="item5 item cot1">5</div>
+            <div class="item6 item cot1">6</div>
+            <div class="item7 item cot1">7</div>
+            <div class="item8 item cot1">8</div>
+            <div class="item9 item cot1">9</div>
         </div>
-        <div class="item-group">
-            <div class="item1 item">Number</div>
-            <div class="item2 item">Number</div>
-            <div class="item3 item">Number</div>
-            <div class="item4 item">Number</div>
-            <div class="item5 item">Number</div>
-            <div class="item6 item">Number</div>
-            <div class="item7 item">Number</div>
-            <div class="item8 item">Number</div>
-            <div class="item9 item">Number</div>
-            <div class="item10 item">Number</div>
+
+        <div class="item-group-2">
+            <div class="item0 item cot2">0</div>
+            <div class="item1 item cot2">1</div>
+            <div class="item2 item cot2">2</div>
+            <div class="item3 item cot2">3</div>
+            <div class="item4 item cot2">4</div>
+            <div class="item5 item cot2">5</div>
+            <div class="item6 item cot2">6</div>
+            <div class="item7 item cot2">7</div>
+            <div class="item8 item cot2">8</div>
+            <div class="item9 item cot2">9</div>
         </div>
-        <div class="item-group" >
-            <div class="item1 item">Number</div>
-            <div class="item2 item">Number</div>
-            <div class="item3 item">Number</div>
-            <div class="item4 item">Number</div>
-            <div class="item5 item">Number</div>
-            <div class="item6 item">Number</div>
-            <div class="item7 item">Number</div>
-            <div class="item8 item">Number</div>
-            <div class="item9 item">Number</div>
-            <div class="item10 item">Number</div>
+        <div class="item-group-3" >
+            <div class="item0 item cot3">0</div>
+            <div class="item1 item cot3">1</div>
+            <div class="item2 item cot3">2</div>
+            <div class="item3 item cot3">3</div>
+            <div class="item4 item cot3">4</div>
+            <div class="item5 item cot3">5</div>
+            <div class="item6 item cot3">6</div>
+            <div class="item7 item cot3">7</div>
+            <div class="item8 item cot3">8</div>
+            <div class="item9 item cot3">9</div>
         </div>
         
 
     </div>
+</div>
+<div class="bt">
+    <button id="bt1">Stop</button>
+<button id="bt2">Continue</button>
+</div>
+
+<script src="script.js"></script>
   </body>
 </html>
