@@ -16,24 +16,25 @@ function randomColor (el) {
 
 
 
-// function tinhVitri(els){
-//   console.log(Array.from(els));
-//   let arr1=Array.from(els)
-//   arr1.reduce((init,currentValue)=>{
-//     // let rect = el.getBoundingClientRect()
-//     if(init.getBoundingClientRect().top<currentValue.getBoundingClientRect().top)
-//     return currentValue    // .top;
-//     // console.log(rect);
+function tinhVitri(els){
+  
+  // console.log(Array.from(els));
+  let elStop=els[0];
+  
+  els.forEach((el)=>{
+    if(el.getBoundingClientRect().top>elStop.getBoundingClientRect().top){
+      elStop=el
+
+    }
+    // console.log( el.getBoundingClientRect().top
+    // );
     
+    
+  })
+  
+  console.log(elStop.innerText);
+}
 
-
-
-//   },els[0])
-
-
-// }
-
-// tinhVitri(nodea);
 
 
 function soStopLuuLai(ivDaXuLy,soPhanTu){
@@ -148,9 +149,15 @@ console.log(arrSolangoi);
         
 
         console.log(nodea[indexLuuLai]);
+        console.log(nodea2[indexLuuLai]);
+        console.log(nodea3[indexLuuLai]);
         clearInterval(ivid2);
         clearInterval(ivid2Cot2);
         clearInterval(ivid2Cot3);
+        tinhVitri(nodea);
+        tinhVitri(nodea2);
+        tinhVitri(nodea3);
+
     }, 5000);
     
 
